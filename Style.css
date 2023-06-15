@@ -26,7 +26,12 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
+    transition: all 0.2s ease;
 
+}
+
+.show-chatbot .chatbot-toggler {
+    transform: rotate(90deg);
 }
 
 .chatbot-toggler span {
@@ -54,8 +59,10 @@ body {
     overflow: hidden;
     background: #fff;
     border-radius: 15px;
+    transform-origin: bottom right;
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
         0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease;
 }
 
 /* Toggle class */
@@ -83,7 +90,7 @@ body {
     top: 50%;
     color: #fff;
     cursor: pointer;
-    display: none;
+    display: block;
     transform: translateY(-50%);
 }
 
@@ -146,6 +153,7 @@ body {
     width: 100%;
     border: none;
     outline: none;
+    max-height: 170px;
     font-size: 0.95rem;
     resize: none;
     padding: 16px 15px 16px 0;
